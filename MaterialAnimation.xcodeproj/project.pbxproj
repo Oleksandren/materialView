@@ -13,7 +13,7 @@
 		1DF667B11BE46CBE0094A4C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DF667861BE46C540094A4C0 /* Assets.xcassets */; };
 		1DF667B31BE46EEA0094A4C0 /* MaterialAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF667B21BE46EEA0094A4C0 /* MaterialAnimationVC.swift */; };
 		1DF667B51BE47FF20094A4C0 /* UIView+Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF667B41BE47FF20094A4C0 /* UIView+Material.swift */; };
-		1DF667BA1BE488F10094A4C0 /* UIControl+Matterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF667B71BE488F10094A4C0 /* UIControl+Matterial.swift */; };
+		1DF667BA1BE488F10094A4C0 /* UIControl+Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF667B71BE488F10094A4C0 /* UIControl+Material.swift */; };
 		1DF667BB1BE488F10094A4C0 /* UITableViewCell+Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF667B81BE488F10094A4C0 /* UITableViewCell+Material.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +26,7 @@
 		1DF6678D1BE46C540094A4C0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DF667B21BE46EEA0094A4C0 /* MaterialAnimationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialAnimationVC.swift; sourceTree = "<group>"; };
 		1DF667B41BE47FF20094A4C0 /* UIView+Material.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Material.swift"; sourceTree = "<group>"; };
-		1DF667B71BE488F10094A4C0 /* UIControl+Matterial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControl+Matterial.swift"; sourceTree = "<group>"; };
+		1DF667B71BE488F10094A4C0 /* UIControl+Material.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControl+Material.swift"; sourceTree = "<group>"; };
 		1DF667B81BE488F10094A4C0 /* UITableViewCell+Material.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Material.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,7 +87,7 @@
 		1DF667841BE46C540094A4C0 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				1DF667B71BE488F10094A4C0 /* UIControl+Matterial.swift */,
+				1DF667B71BE488F10094A4C0 /* UIControl+Material.swift */,
 				1DF667B81BE488F10094A4C0 /* UITableViewCell+Material.swift */,
 				1DF667B41BE47FF20094A4C0 /* UIView+Material.swift */,
 			);
@@ -196,7 +196,7 @@
 				1DF667B51BE47FF20094A4C0 /* UIView+Material.swift in Sources */,
 				1DF6678E1BE46C540094A4C0 /* AppDelegate.swift in Sources */,
 				1DF667BB1BE488F10094A4C0 /* UITableViewCell+Material.swift in Sources */,
-				1DF667BA1BE488F10094A4C0 /* UIControl+Matterial.swift in Sources */,
+				1DF667BA1BE488F10094A4C0 /* UIControl+Material.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
