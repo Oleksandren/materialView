@@ -17,7 +17,11 @@ class MaterialAnimationVC: UIViewController, UITableViewDataSource, UITableViewD
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let identifier = "UITableViewCell"
         let cell = tableView.dequeueReusableCellWithIdentifier(identifier, forIndexPath: indexPath)
-        cell.textLabel?.text = "Cell nuber \(indexPath.row + 1)"
+        if buttonShort.alpha == 1.0 {
+            cell.textLabel?.text = "tap for hide buttons"
+        } else {
+            cell.textLabel?.text = "tap for show from \(self.titles(forIndex: indexPath.row))"
+        }
         return cell
     }
     
@@ -26,6 +30,7 @@ class MaterialAnimationVC: UIViewController, UITableViewDataSource, UITableViewD
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.reloadData()
         if buttonShort.alpha == 1.0 {
             buttonShort.alpha = 0;
             buttonLong.alpha = 0;
@@ -36,6 +41,25 @@ class MaterialAnimationVC: UIViewController, UITableViewDataSource, UITableViewD
             let startPointShortButton = self.animationStartPoint(forRect: buttonShort.frame, index: indexPath.row)
             buttonShort.materialAnimationShow(withStartPoint: startPointShortButton)
             buttonLong.materialAnimationShow(withStartPoint: startPointLongButton)
+        }
+    }
+    
+    //MARK: - Helpers
+    
+    func titles(forIndex index: Int) -> String {
+        switch index % 5 {
+        case 0:
+            return "left top corner"
+        case 1:
+            return "left bottom corner"
+        case 2:
+            return "right bottom corner"
+        case 3:
+            return "right top corner"
+        case 4:
+            return "center"
+        default:
+            return "unknown"
         }
     }
     
